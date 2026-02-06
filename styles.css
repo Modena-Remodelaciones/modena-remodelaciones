@@ -1,0 +1,396 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background: linear-gradient(135deg, #52425c, #c299ca);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.hero h4 {
+    font-weight: 300;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+/* ===== SECCIONES ===== */
+section {
+    padding: 70px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #5a4fcf;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* ===== CARRUSEL ===== */
+.carousel {
+    position: relative;
+    max-width: 750px;
+    margin: 40px auto 0 auto;
+}
+
+.carousel-track {
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+.slide.active {
+    display: block;
+}
+
+/* ===== BOTONES CARRUSEL ===== */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.35);
+    border: none;
+    backdrop-filter: blur(6px);
+    color: #4b2e83;
+    font-size: 22px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+
+.carousel-btn:hover {
+    background: rgba(255,255,255,0.6);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* ===== SERVICIOS ===== */
+.servicios {
+    text-align: center;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.servicio-card {
+    background: white;
+    padding: 35px 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.servicio-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 36px rgba(0,0,0,0.12);
+}
+
+.servicio-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #4b2e83;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.servicio-card p {
+    font-size: 0.98rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* ===== PROCESO ===== */
+.proceso {
+    text-align: center;
+}
+
+.proceso-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.paso {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paso:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 36px rgba(0,0,0,0.12);
+}
+
+.paso-numero {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 15px auto;
+    background: linear-gradient(135deg, #6a4bc4, #c299ca);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.paso h3 {
+    font-family: 'Playfair Display', serif;
+    color: #4b2e83;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.paso p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ===== BENEFICIOS ===== */
+.beneficios {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.beneficios h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #4b2e83;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 45px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.beneficio {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.beneficio:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 36px rgba(0,0,0,0.12);
+}
+
+.beneficio-icono {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.beneficio h3 {
+    font-family: 'Playfair Display', serif;
+    color: #4b2e83;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.beneficio p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ===== CONTACTO RÁPIDO ===== */
+.contacto-rapido {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #ffffff, #f4efff);
+}
+
+.contacto-rapido h2 {
+    color: #4b2e83;
+    margin-bottom: 8px;
+}
+
+.contacto-texto {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.contacto-botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contacto-btn {
+    text-decoration: none;
+    padding: 14px 26px;
+    border-radius: 40px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.whatsapp { background: #25D366; color: white; }
+.gmail { background: #EA4335; color: white; }
+
+.contacto-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: linear-gradient(135deg, #4b2e83, #6a4bc4);
+    color: white;
+    padding-top: 60px;
+    margin-top: 80px;
+}
+
+.footer-contenido {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+.footer h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.footer h4 {
+    margin-bottom: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.footer p {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.6;
+}
+
+.footer-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes-iconos {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 10px;
+}
+
+.red {
+    text-decoration: none;
+    font-size: 22px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+.red.instagram {
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+.red.facebook {
+    background: #1877F2;
+}
+
+.red:hover {
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.3);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 18px 10px;
+    background: rgba(0,0,0,0.15);
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .beneficios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .proceso-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h1 { font-size: 2.4rem; }
+    .hero h4 { font-size: 1rem; letter-spacing: 2px; }
+    .carousel-track { height: 220px; }
+    .beneficios-grid,
+    .proceso-grid {
+        grid-template-columns: 1fr;
+    }
+    section { padding: 50px 15px; }
+}
