@@ -292,7 +292,7 @@ h2 {
 
 /* ===== FOOTER ===== */
 .footer {
-    background: linear-gradient(135deg, #4b2e83, #6a4bc4);
+    background: linear-gradient(135deg, #4b2e83, #7e61d4);
     color: white;
     padding-top: 60px;
     margin-top: 80px;
@@ -326,6 +326,7 @@ h2 {
     line-height: 1.6;
 }
 
+/* Redes sociales del footer (botones modificados) */
 .footer-redes {
     display: flex;
     flex-direction: column;
@@ -339,33 +340,38 @@ h2 {
     margin-top: 10px;
 }
 
-.red {
-    text-decoration: none;
-    font-size: 22px;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: flex;
+.redes-iconos a {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;                /* espacio entre icono y texto */
+    width: auto;              /* ancho ajustable al contenido */
+    padding: 12px 20px;       /* tamaño del botón */
+    border-radius: 30px;      /* bordes redondeados */
+    font-weight: 600;
+    font-size: 0.95rem;
     color: white;
-    transition: all 0.3s ease;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
-.red.instagram {
-    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+/* Colores oficiales */
+.redes-iconos a.instagram {
+    background: linear-gradient(45deg, #feda75, #d62976, #8134af);
 }
 
-.red.facebook {
+.redes-iconos a.facebook {
     background: #1877F2;
 }
 
-.red:hover {
-    transform: translateY(-4px) scale(1.1);
-    box-shadow: 0 10px 24px rgba(0,0,0,0.3);
+/* Hover elegante */
+.redes-iconos a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.25);
 }
 
+/* Footer bottom */
 .footer-bottom {
     text-align: center;
     padding: 18px 10px;
@@ -373,6 +379,7 @@ h2 {
     font-size: 0.85rem;
     letter-spacing: 0.5px;
 }
+
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
