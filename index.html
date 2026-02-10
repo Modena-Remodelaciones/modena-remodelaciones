@@ -10,8 +10,13 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-
+    
+   <!-- Icons--> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" type="image/png">
 
 </head>
 
@@ -21,44 +26,54 @@
     <div class="hero-content">
         <h1>Modena</h1>
         <h4>Diseño y Remodelaciones</h4>
-        <p>Diseñamos y transformamos espacios para que se adapten a tu vida.</p>
+        <!-- LOGO -->
+        <div class="hero-logo">
+            <img src="logo.modena.png.png" alt="Logo Modena Remodelaciones">
+            
+        </div>
+        <p>"Diseñamos y transformamos espacios para que se adapten a tu vida."</p>
     </div>
 </header>
 
-<section class="servicios">
-    <div class="container">
-        <h2>Nuestros Servicios</h2>
+<section class="oferta">
+    <div class="container oferta-contenido">
+        <h2>Remodelamos tu espacio sin dolores de cabeza</h2>
+        <p class="oferta-subtitulo">
+            Nos ocupamos de la planificación, coordinación de gremios y ejecución prolija,
+            para que disfrutes la transformación sin estrés ni sorpresas.
+        </p>
 
-        <div class="servicios-grid">
-
-            <div class="servicio-card">
-                <h3>Remodelación Integral de Espacios</h3>
-                <p>
-                    Transformamos ambientes desde cero. Nos encargamos de la demolición, renovación de pisos y paredes, pintura, instalaciones eléctricas básicas, carpintería, plomería, revestimientos, azulejos y mejoras en techos. Coordinamos todos los oficios para que tu obra avance de forma ordenada, segura y dentro de los plazos acordados.
-                </p>
+        <div class="oferta-puntos">
+            <div class="oferta-item">
+                <i class="fas fa-check-circle"></i>
+                <p>Presupuesto claro y detallado desde el inicio</p>
             </div>
 
-            <div class="servicio-card">
-                <h3>Remodelación + Diseño de Interiores</h3>
-                <p>
-                    Renovamos tu espacio y además lo convertimos en un ambiente armónico y funcional. Sumamos al trabajo de obra el diseño de interiores completo: selección de mobiliario, iluminación decorativa, textiles, arte, alfombras, plantas y detalles que reflejen tu estilo. Creamos espacios listos para disfrutar desde el primer día.
-                </p>
+            <div class="oferta-item">
+                <i class="fas fa-check-circle"></i>
+                <p>Cumplimiento de tiempos y etapas de obra</p>
             </div>
 
-            <div class="servicio-card">
-                <h3>Diseño de Interiores</h3>
-                <p>
-                    Si tu espacio ya está construido pero querés transformarlo visual y funcionalmente, nos ocupamos del diseño integral. Buscamos, organizamos e instalamos muebles, cortinas, iluminación, objetos decorativos y vegetación, logrando una estética equilibrada, personalizada y coherente con el estilo que querés para tu hogar o local.
-                </p>
+            <div class="oferta-item">
+                <i class="fas fa-check-circle"></i>
+                <p>Coordinamos todos los oficios por vos</p>
             </div>
-
         </div>
+
+         <a href="https://wa.me/5493813425648" target="_blank" class="oferta-btn">
+      <i class="fab fa-whatsapp"></i> Solicitar presupuesto por WhatsApp
+   </a>
+
     </div>
 </section>
 
 <section class="trabajos">
     <div class="container">
-        <h2>Algunos de nuestros trabajos</h2>
+        <h2>Casos reales de transformación</h2>
+        <p>
+            Estos son algunos proyectos realizados por nuestro equipo, donde combinamos planificación,
+            coordinación de oficios y ejecución profesional para lograr resultados duraderos y funcionales.
+        </p>
 
         <div class="carousel">
             <button class="carousel-btn prev" onclick="moverSlide(-1)">❮</button>
@@ -73,6 +88,97 @@
 
             <button class="carousel-btn next" onclick="moverSlide(1)">❯</button>
         </div>
+
+        <div class="trabajos-descripcion">
+            <h3>Qué resolvimos en estos proyectos</h3>
+            <p><strong>Cocinas:</strong> renovación de revestimientos, instalaciones eléctricas nuevas, iluminación y mobiliario funcional.</p>
+            <p><strong>Baños:</strong> cambio de sanitarios, griferías, revestimientos y mejoras de ventilación e iluminación.</p>
+            <p><strong>Viviendas y locales:</strong> ampliaciones, pintura integral, mejoras estructurales y modernización de espacios.</p>
+        </div>
+
+        <!-- CTA ESTRATÉGICO -->
+        <div class="trabajos-cta">
+            <p><strong>¿Te gustaría lograr una transformación así en tu espacio?</strong></p>
+            <a href="https://wa.me/5493813425648?text=Hola%20Modena,%20quiero%20consultar%20por%20una%20remodelación" 
+               target="_blank" 
+               class="oferta-btn">
+               <i class="fab fa-whatsapp"></i> Consultar mi proyecto por WhatsApp
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="presentacion">
+    <div class="container presentacion-grid">
+        <div class="presentacion-texto">
+            <h2>Sobre nosotros:</h2>
+            <p>
+                Somos un equipo especializado en remodelaciones y diseño de interiores en Tucumán.
+                Transformamos hogares y espacios comerciales combinando estética, funcionalidad y ejecución profesional.
+            </p>
+            <p>
+                Coordinamos todos los oficios necesarios y planificamos cada etapa de la obra para que el proceso sea ordenado, claro y sin sorpresas.
+            </p>
+        </div>
+
+        <div class="presentacion-imagen">
+            <img src="equipo.png" alt="Equipo de Modena Remodelaciones trabajando">
+        </div>
+    </div>
+</section>
+
+<section class="faqs">
+    <div class="container">
+        <h2>Preguntas Frecuentes</h2>
+        <p class="faq-intro">
+            Estas son algunas de las dudas más comunes antes de comenzar una remodelación.
+        </p>
+
+        <div class="faq-item">
+            <button class="faq-question">¿Hacen presupuestos sin costo?</button>
+            <div class="faq-answer">
+                <p>Sí. Realizamos una primera visita o evaluación del proyecto para entender tus necesidades y luego entregamos un presupuesto detallado sin cargo.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">¿Trabajan con materiales incluidos?</button>
+            <div class="faq-answer">
+                <p>Podemos encargarnos de la provisión de materiales o trabajar con los que el cliente prefiera. Siempre detallamos todo en el presupuesto.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">¿Cuánto tiempo demora una remodelación?</button>
+            <div class="faq-answer">
+                <p>Depende del tipo y tamaño del proyecto. Antes de iniciar la obra entregamos un cronograma estimado con las etapas de trabajo.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">¿Se puede vivir en la casa durante la obra?</button>
+            <div class="faq-answer">
+                <p>En muchos casos sí, organizamos el trabajo por etapas para minimizar molestias. En obras más grandes, podemos recomendar alternativas temporales.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">¿Cómo se realizan los pagos?</button>
+            <div class="faq-answer">
+                <p>Trabajamos con un anticipo para comenzar y pagos por etapas según el avance de obra, todo previamente detallado en el contrato.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">¿Ofrecen garantía?</button>
+            <div class="faq-answer">
+                <p>Sí. Todos nuestros trabajos cuentan con garantía sobre la ejecución, brindando tranquilidad y respaldo a nuestros clientes.</p>
+            </div>
+        </div>
+
     </div>
 </section>
 
@@ -116,63 +222,33 @@
     </div>
 </section>
 
-<section class="beneficios">
+
+
+ <section class="contacto-rapido">
     <div class="container">
-        <h2>Por qué elegirnos</h2>
+        <h2>¿Listo para transformar tu espacio?</h2>
+        <p class="contacto-texto">
+            Escribinos y contanos tu idea. Te respondemos a la brevedad para coordinar una visita y armar tu presupuesto.
+        </p>
 
-        <div class="beneficios-grid">
+        <div class="contacto-botones">
 
-            <div class="beneficio">
-                <div class="beneficio-icono">✔</div>
-                <h3>Presupuestos claros</h3>
-                <p>Detallamos cada partida de trabajo y materiales para que sepas exactamente en qué estás invirtiendo.</p>
-            </div>
+            <a href="https://wa.me/5493813425648" target="_blank" class="contacto-btn whatsapp">
+                <i class="fab fa-whatsapp"></i> Hablar por WhatsApp
+            </a>
 
-            <div class="beneficio">
-                <div class="beneficio-icono">👷</div>
-                <h3>Equipo de Trabajo</h3>
-                <p>Contamos con un equipo de trabajo especializado en cada área.</p>
-            </div>
+            <a href="mailto:modenaremodelaciones@gmail.com" class="contacto-btn gmail">
+                <i class="fas fa-envelope"></i> Enviar email
+            </a>
 
-            <div class="beneficio">
-                <div class="beneficio-icono">⏱</div>
-                <h3>Cumplimos los plazos</h3>
-                <p>Planificamos la obra por etapas y coordinamos los oficios para entregar en el tiempo acordado.</p>
-            </div>
-
-            <div class="beneficio">
-                <div class="beneficio-icono">🛠</div>
-                <h3>Coordinación completa</h3>
-                <p>Nos encargamos de todos los gremios y proveedores, evitando demoras y problemas de organización.</p>
-            </div>
-
-            <div class="beneficio">
-                <div class="beneficio-icono">💬</div>
-                <h3>Comunicación constante</h3>
-                <p>Mantenemos contacto permanente para que estés informado en cada etapa del proyecto.</p>
-            </div>
+            <a href="https://instagram.com/modenaremodelaciones" target="_blank" class="contacto-btn instagram">
+                <i class="fab fa-instagram"></i> Ver trabajos en Instagram
+            </a>
 
         </div>
     </div>
 </section>
 
- <section class="contacto-rapido">
-    <div class="container">
-        <h2>Contactanos</h2>
-        <p class="contacto-texto">Estamos listos para escuchar tu proyecto.</p>
-
-        <div class="contacto-botones">
-            <a href="https://wa.me/5493813425648" target="_blank" class="contacto-btn whatsapp">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-
-            <a href="mailto:modenaremodelaciones@gmail.com" class="contacto-btn gmail">
-                <i class="fas fa-envelope"></i> Gmail
-            </a>
-
-        </div>
-    </div>
- </section>
 
 
 <footer class="footer">
@@ -203,25 +279,15 @@
     </div>
 </footer>
 
-<!-- JS DEL CARRUSEL -->
-<script>
-let slideActual = 0;
-const slides = document.querySelectorAll(".slide");
+ <script src="script.js"></script>
 
-function mostrarSlide(index) {
-    slides.forEach(slide => slide.classList.remove("active"));
-    slides[index].classList.add("active");
-}
+ <a href="https://wa.me/5493813425648" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Escribinos por WhatsApp">
+   <i class="fab fa-whatsapp"></i>
+ </a>
 
-function moverSlide(direccion) {
-    slideActual += direccion;
-
-    if (slideActual < 0) slideActual = slides.length - 1;
-    if (slideActual >= slides.length) slideActual = 0;
-
-    mostrarSlide(slideActual);
-}
-</script>
 
 </body>
 </html>
